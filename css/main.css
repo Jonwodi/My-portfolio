@@ -486,4 +486,51 @@ h3 {
   font-family: Helvetica;
   font-weight: bold;
 }
+
+li {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+li:hover {
+  color: #1dfb15;
+}
+
+.box2 {
+  margin-top: 100px;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: black;
+}
+
+.box2 img {
+  height: 640px;
+  width: 705px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+.box2 {
+  margin-bottom: 100px;
+}
+
+.box3 {
+  width: 1440px;
+}
+
+.box3 img {
+  width: 1440px;
+}
 /*# sourceMappingURL=main.css.map */
