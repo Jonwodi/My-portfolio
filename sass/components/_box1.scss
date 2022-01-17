@@ -1,10 +1,19 @@
 .box1 {
-  background-image: url(/images/software.jpg);
+  background-image: url(/images/Software.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 1440px 1036px;
   width: 1440px;
   height: 1036px;
+}
+
+.box1 h1 {
+  margin-top: 140px;
+  margin-left: 140px;
+}
+
+.box1 h3 {
+  margin-left: 140px;
 }
 
 h1 {
@@ -15,10 +24,16 @@ h1 {
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 85px;
+  opacity: 0.8;
   color: #1dfb15;
   font-family: Helvetica;
   font-weight: bold;
+}
+
+h3:hover {
+  color: #1dfb15;
+  opacity: 1;
 }
 
 li {
@@ -39,19 +54,23 @@ li:hover {
   margin-top: 100px;
 }
 
-h5 {
+.box2 h5 {
   font-size: 18px;
   font-family: Helvetica;
   font-weight: bold;
   color: black;
+  margin-left: 90px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  letter-spacing: 9px;
 }
 
 .box2 img {
   height: 640px;
-  width: 705px;
+  width: 605px;
   margin-top: 20px;
   margin-bottom: 100px;
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 .box2 {
@@ -64,4 +83,30 @@ h5 {
 
 .box3 img {
   width: 1440px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.flex-container li {
+  margin-top: 60px;
+  margin-left: 0px;
+  margin-right: 65px;
+}
+
+#contact {
+  border: 3px solid #1dfb15;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  color: #1dfb15;
+  :hover {
+    color: #ffffff;
+  }
 }
