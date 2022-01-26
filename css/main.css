@@ -496,11 +496,6 @@ h3 {
   font-weight: bold;
 }
 
-h3:hover {
-  color: #1dfb15;
-  opacity: 1;
-}
-
 li {
   text-align: center;
   color: #ffffff;
@@ -576,7 +571,7 @@ li:hover {
   margin-right: 65px;
 }
 
-#contact {
+#enquire {
   border: 3px solid #1dfb15;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -585,7 +580,7 @@ li:hover {
   color: #1dfb15;
 }
 
-#contact :hover {
+#enquire :hover {
   color: #ffffff;
 }
 
@@ -595,6 +590,16 @@ li:hover {
   margin-left: 75px;
   font-family: Helvetica;
   font-weight: bold;
+}
+
+#item3-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mini-box {
