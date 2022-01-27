@@ -23,11 +23,25 @@ h1 {
   font-weight: bold;
 }
 
+/* The animation code */
+@keyframes name {
+  from {
+    color: #1dfb15;
+  }
+  to {
+    color: gold;
+  }
+}
+
 h3 {
   font-size: 85px;
   color: #1dfb15;
   font-family: Helvetica;
   font-weight: bold;
+  animation-name: name;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 li {
