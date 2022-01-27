@@ -10,7 +10,8 @@
         "../sass/resets/_responsive.scss",
         "../sass/resets/_typography.scss",
         "../sass/resets/_placeholder.scss",
-        "../sass/components/_box1.scss"
+        "../sass/components/_box1.scss",
+        "../sass/components/_contact.scss"
     ],
     "names": [],
     "file": "main.css"
