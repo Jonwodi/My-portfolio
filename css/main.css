@@ -629,19 +629,30 @@ input#submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 640px;
   margin-top: 10px;
-  font-size: 50px;
+  font-size: 25px;
+  width: 160px;
+  height: 75px;
+  font-family: Helvetica;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  background-color: #1dfb15;
+  color: #fff;
+  border: 2px double #fff;
 }
 
 input#submit:hover {
-  background-color: #1dfb15;
+  background-color: lightgreen;
+  cursor: pointer;
 }
 
 #contact-header {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   color: #1dfb15;
 }
 
@@ -686,13 +697,54 @@ input#submit:hover {
 }
 
 .form-fields input {
-  width: 600px;
+  width: 800px;
+  padding: 20px;
+  font-family: Helvetica;
+  border: 5px double black;
 }
 
 .form-fields textarea {
-  min-width: 600px;
-  max-width: 600px;
+  min-width: 800px;
+  max-width: 800px;
   min-height: 200px;
   max-height: 200px;
+  padding: 20px;
+  font-family: Helvetica;
+  border: 5px double black;
+}
+
+label p {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 50px;
+  color: #1dfb15;
+  margin-right: 550px;
+}
+
+.input-header {
+  margin-right: 630px;
+}
+
+.form-fields {
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  background-image: url(/images/Software.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1440px 1100px;
+  width: 1440px;
+  height: 1100px;
+}
+
+.contact-box h1 {
+  margin-top: 50px;
+  margin-left: 140px;
+  margin-bottom: 25px;
+}
+
+.contact-box h3 {
+  margin-left: 140px;
 }
 /*# sourceMappingURL=main.css.map */
