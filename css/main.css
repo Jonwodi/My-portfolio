@@ -607,4 +607,90 @@ li:hover {
   display: -ms-flexbox;
   display: flex;
 }
+
+#contact-form input {
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: black;
+}
+
+#contact-form textarea {
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: black;
+}
+
+#contact-form label {
+  color: #fff;
+  font-size: 40px;
+}
+
+input#submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  font-size: 50px;
+}
+
+input#submit:hover {
+  background-color: #1dfb15;
+}
+
+#contact-header {
+  margin-left: auto;
+  margin-right: auto;
+  color: #1dfb15;
+}
+
+#contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.form-fields label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.form-fields input {
+  width: 600px;
+}
+
+.form-fields textarea {
+  width: 600px;
+  height: 200px;
+}
 /*# sourceMappingURL=main.css.map */
