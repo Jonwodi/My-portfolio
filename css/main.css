@@ -465,7 +465,7 @@ h1 {
 }
 
 .box1 {
-  background-image: url(/images/Software.jpg);
+  background-image: url(/images/software.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 1440px 1036px;
@@ -624,16 +624,34 @@ li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 .mini-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.skills img {
+  height: 100px;
+  width: 100px;
 }
 
 #contact-form input {
