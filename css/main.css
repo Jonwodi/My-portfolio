@@ -524,7 +524,7 @@ h3 {
 
 li {
   text-align: center;
-  color: #ffffff;
+  color: #1dfb15;
   font-size: 14px;
   font-family: Helvetica;
   font-weight: bold;
@@ -535,7 +535,7 @@ li {
 }
 
 li:hover {
-  color: #1dfb15;
+  color: gold;
 }
 
 .box2 {
@@ -606,8 +606,10 @@ li:hover {
   color: #1dfb15;
 }
 
-#enquire :hover {
+#enquire:hover {
   color: #ffffff;
+  background-color: gold;
+  border: 3px solid #ffffff;
 }
 
 #item-3 {
@@ -677,8 +679,8 @@ input#submit:hover {
 }
 
 #contact-header {
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 430px;
+  margin-left: 0px;
   color: #1dfb15;
 }
 
@@ -772,5 +774,68 @@ label p {
 
 .contact-box h3 {
   margin-left: 140px;
+}
+
+.footer {
+  height: 250px;
+  padding: 12rem;
+  font-size: 13rem;
+  text-align: center;
+}
+
+.footer img {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-enquire {
+  font-family: Helvetica;
+  font-weight: bold;
+  border: 3px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  background-color: #1dfb15;
+}
+
+.footer-enquire:hover {
+  background-color: #1dfb15;
+  opacity: 0.5;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.footer-top p {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-decoration: underline;
+}
+
+.footer-top p:hover {
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */

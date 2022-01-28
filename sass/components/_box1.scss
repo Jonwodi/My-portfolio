@@ -46,7 +46,7 @@ h3 {
 
 li {
   text-align: center;
-  color: #ffffff;
+  color: #1dfb15;
   font-size: 14px;
   font-family: Helvetica;
   font-weight: bold;
@@ -55,8 +55,11 @@ li {
 }
 
 li:hover {
-  color: #1dfb15;
+  color: gold;
 }
+// .current {
+//   background-color: #ffffff;
+// }
 
 .box2 {
   margin-top: 100px;
@@ -114,9 +117,11 @@ li:hover {
   padding-right: 40px;
   padding-left: 40px;
   color: #1dfb15;
-  :hover {
-    color: #ffffff;
-  }
+}
+#enquire:hover {
+  color: #ffffff;
+  background-color: gold;
+  border: 3px solid #ffffff;
 }
 
 #item-3 {
