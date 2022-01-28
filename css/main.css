@@ -654,6 +654,14 @@ li:hover {
   width: 100px;
 }
 
+#django-logo1 {
+  width: 200px;
+}
+
+#django-logo2 {
+  width: 200px;
+}
+
 #contact-form input {
   margin-bottom: 10px;
   background-color: #fff;
