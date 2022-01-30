@@ -85,7 +85,7 @@ li:hover {
 }
 
 .box2 {
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
 }
 
 .box3 {
@@ -136,6 +136,7 @@ li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
@@ -143,12 +144,16 @@ li:hover {
   font-family: Helvetica;
   font-weight: bold;
   font-size: 30px;
-  text-decoration: underline;
+  letter-spacing: 9px;
 }
 
 .mini-box {
   display: flex;
   // background-color: black;
+}
+
+.skills {
+  background-color: #ffffff;
 }
 
 .skills img {

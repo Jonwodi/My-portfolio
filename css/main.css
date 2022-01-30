@@ -561,10 +561,6 @@ li:hover {
   margin-left: 90px;
 }
 
-.box2 {
-  margin-bottom: 100px;
-}
-
 .box3 {
   width: 1440px;
 }
@@ -630,6 +626,7 @@ li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -640,13 +637,17 @@ li:hover {
   font-family: Helvetica;
   font-weight: bold;
   font-size: 30px;
-  text-decoration: underline;
+  letter-spacing: 9px;
 }
 
 .mini-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.skills {
+  background-color: #ffffff;
 }
 
 .skills img {
@@ -807,6 +808,8 @@ label p {
   padding: 12rem;
   font-size: 13rem;
   text-align: center;
+  background-color: #fff;
+  border-top: 3px solid black;
 }
 
 .footer img {
@@ -866,7 +869,8 @@ label p {
 }
 
 .projects {
-  background-color: black;
+  background-color: #fff;
+  border-top: 3px solid red;
   height: 2400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,10 +899,10 @@ label p {
   margin-right: auto;
   margin-bottom: 100px;
   margin-top: 100px;
-  border: 5px solid #1dfb15;
+  border: 5px solid red;
 }
 
 .projects img:hover {
-  border: 5px solid red;
+  border: 5px solid #1dfb15;
 }
 /*# sourceMappingURL=main.css.map */
