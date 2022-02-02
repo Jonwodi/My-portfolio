@@ -26,20 +26,25 @@ input#submit {
   font-family: Helvetica;
   font-weight: bold;
   padding: 5px 5px 5px 5px;
+  // background-color: #1dfb15;
   background-color: #1dfb15;
-  color: #fff;
-  border: 2px double #fff;
+  color: black;
+  // color: #fff;
+  border: 3px solid black;
 }
 
 input#submit:hover {
-  background-color: lightgreen;
   cursor: pointer;
+  opacity: 0.8;
 }
 
 #contact-header {
-  margin-right: 430px;
+  margin-right: 400px;
   margin-left: 0px;
-  color: #1dfb15;
+  // color: #1dfb15;
+  color: #fff;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px black;
 }
 
 #contact-page {
@@ -81,12 +86,15 @@ label p {
   font-family: Helvetica;
   font-weight: bold;
   font-size: 50px;
-  color: #1dfb15;
-  margin-right: 550px;
+  // color: #1dfb15;
+  color: #fff;
+  margin-right: 510px;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px black;
 }
 
 .input-header {
-  margin-right: 630px;
+  margin-right: 600px;
 }
 
 .form-fields {

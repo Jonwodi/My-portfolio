@@ -11,10 +11,14 @@
   margin-top: 140px;
   margin-left: 140px;
   color: #ffffff;
+  text-shadow: 5px 5px black;
+  letter-spacing: 5px;
 }
 
 .header h3 {
   margin-left: 140px;
+  text-shadow: 5px 5px black;
+  letter-spacing: 5px;
 }
 
 h1 {
@@ -81,10 +85,11 @@ li:hover {
   margin-top: 20px;
   margin-bottom: 100px;
   margin-left: 90px;
+  border: 3px solid black;
+  // border-radius: 20px;
 }
 
 .section1 {
-  margin-bottom: 100px;
   background-color: #ffffff;
 }
 
@@ -101,6 +106,7 @@ li:hover {
   margin-left: 0px;
   margin-right: 65px;
   letter-spacing: 5px;
+  text-shadow: 5px 5px black;
 }
 
 #enquire {
@@ -112,17 +118,18 @@ li:hover {
   color: #1dfb15;
 }
 #enquire:hover {
-  color: black;
-  background-color: #1dfb15;
-  border: 3px solid black;
+  color: #ffffff;
+  border: 3px solid #ffffff;
 }
 
 #item-3 {
   font-size: 55px;
-  margin-top: 6px;
+  margin-top: 7px;
+  // margin-top: 20px;
   margin-left: 75px;
   font-family: Helvetica;
   font-weight: bold;
+  letter-spacing: 5px;
 }
 
 #item3-info {
@@ -131,13 +138,15 @@ li:hover {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-right: 475px;
   font-family: Helvetica;
   font-weight: bold;
   font-size: 30px;
-  letter-spacing: 9px;
+  letter-spacing: 10px;
+  color: #1dfb15;
+  text-decoration: underline;
 }
 
 .mini-box {
@@ -147,19 +156,39 @@ li:hover {
 
 .skills {
   background-color: #ffffff;
-  height: 1000px;
+  // background-color: #1dfb15;
+  margin-left: 50px;
 }
 
 .skills img {
-  height: 100px;
-  width: 100px;
+  // height: 100px;
+  // width: 100px;
+  height: 50px;
+  width: 50px;
+  // margin-left: 50px;
+  // margin-right: 50px;
+  // margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
   // display: flex;
+  border: none;
 }
 
 #django-logo1 {
-  width: 200px;
+  // width: 200px;
+  width: 100px;
 }
 
 #django-logo2 {
-  width: 200px;
+  // width: 200px;
+  width: 100px;
+}
+
+#item4 {
+  margin-left: 78px;
+  color: black;
+  font-family: Helvetica;
+  font-weight: normal;
+  // letter-spacing: 3px;
 }
