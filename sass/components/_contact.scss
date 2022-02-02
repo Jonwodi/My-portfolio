@@ -41,8 +41,7 @@ input#submit:hover {
 #contact-header {
   margin-right: 400px;
   margin-left: 0px;
-  // color: #1dfb15;
-  color: #fff;
+  color: #1dfb15;
   letter-spacing: 5px;
   text-shadow: 5px 5px black;
 }
@@ -69,7 +68,7 @@ input#submit:hover {
   width: 800px;
   padding: 20px;
   font-family: Helvetica;
-  border: 5px double black;
+  border: 5px double #1dfb15;
 }
 
 .form-fields textarea {
@@ -79,7 +78,7 @@ input#submit:hover {
   max-height: 200px;
   padding: 20px;
   font-family: Helvetica;
-  border: 5px double black;
+  border: 5px double #1dfb15;
 }
 
 label p {
@@ -91,6 +90,7 @@ label p {
   margin-right: 510px;
   letter-spacing: 5px;
   text-shadow: 5px 5px black;
+  color: #1dfb15;
 }
 
 .input-header {
@@ -101,22 +101,6 @@ label p {
   margin-bottom: 20px;
 }
 
-.contact-box {
-  background-image: url(/images/Software.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 1440px 1100px;
-  width: 1440px;
-  height: 1100px;
-  // opacity: 0.8;
-}
-
-.contact-box h1 {
-  margin-top: 50px;
-  margin-left: 140px;
-  margin-bottom: 25px;
-}
-
-.contact-box h3 {
-  margin-left: 140px;
+#contact-page {
+  background-color: #fff;
 }
