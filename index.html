@@ -10,33 +10,45 @@
 <body>
   <div>
     <header class="header">
-        <nav>
-          <ul class="nav-menu">
-            <li><a class="current" href="index.html"><p>Home</p></a></li>
-            <li><a class="current" href="#about"><p>About</p></a></li>
-            <li><a class="current" href="#work"><p>Work</p></a></li>
-            <li><a href="#contact-page"><p>Contact</p></a></li>
-            <li><a href="https://github.com/Jonwodi"><img src="images/github.png" alt="GitHub" width="50px" height="50px"></a></li>
-            <li><a href="https://www.linkedin.com/in/jordan-onwodi/"><img src="images/linkedin.png" alt="Linkedin" width="50px" height="50px"></a></li>
-            <li id="enquire"><a href="mailto:Jonwodi@hotmail.co.uk"><p>Enquire</p></a></li>
+        <nav class="nav">
+          <input type="checkbox" class="nav__toggle" id="hamburger"  />
+          <ul class="nav__mobile">
+            <li class="nav__hamburger"><label for="hamburger"><img src="images/hamburger.svg" alt=""></label></li>
+            <li><a href="https://github.com/Jonwodi"><img src="images/github.png" alt="" id="github-mobile"></a></li>
+            <li><a href="https://www.linkedin.com/in/jordan-onwodi/"><img src="images/linkedin.png" alt="" id="linkedin-mobile"></a></li>
           </ul>
+          <!-- <ul class="nav__menu">
+            <li><a href="index.html"><p>Home</p></a></li>
+            <li><a href="#about"><p>About</p></a></li>
+            <li><a href="#work"><p>Work</p></a></li>
+            <li><a href="#contact-page"><p>Contact</p></a></li>
+            <li><a href="https://github.com/Jonwodi"><img src="images/github.png" alt="" id="github" ></a></li>
+            <li><a href="https://www.linkedin.com/in/jordan-onwodi/"><img src="images/linkedin.png" alt="" id="linkedin" ></a></li>
+            <li id="nav__enquire"><a href="mailto:Jonwodi@hotmail.co.uk"><p>Enquire</p></a></li>
+          </ul>
+          <ul class="nav__dropl">
+            <a href="index.html"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#work"><li>Work</li></a>
+            <a href="#contact-page"><li>Contact</li></a>
+          </ul> -->
         </nav>
-        <div class="main-heading">
+        <div>
           <h1>FULLSTACK<br>SOFTWARE<br>DEVELOPER</h1>
           <h3>JORDAN ONWODI</h3>
         </div>
     </header>
-    <section class="section1">
-      <h5 id="about">ABOUT</h5>
-      <div class="mini-box">
+    <section class="about-section">
+      <h4 id="about">ABOUT</h4>
+      <div class="about-container">
         <img src="images/myphoto.jpeg" alt="" />
         <div>
-          <p id="item-3">Fullstack Software Development</p>
-          <p id="item4">Hello there! My name is Jordan Onwodi. I really enjoy coding and I'm always looking for opportunities to further expand my knowledge in both the frontend and backend software development world. My favorite backend programming language to work with is python using the django web framework. Whilst, when it comes to frontend development. I have to admit, I'm in love with using React JS.
+          <h5 id="about-item1">Fullstack Software Development</h5>
+          <p id="about-item2">Hello there! My name is Jordan Onwodi. I really enjoy coding and I'm always looking for opportunities to further expand my knowledge in both the frontend and backend software development world. My favorite backend programming language to work with is python using the django web framework. Whilst, when it comes to frontend development. I have to admit, I'm in love with using React JS.
             However, I love learning new things and working with unfamilar technologies in this ever expanding world of software. During my free time you can find me working in the gym, playing basketball with my friends, reading investment books or cycling and exploring different locations in the UK.
           </p>
-          <div class="skills">
-            <h4 id="item3-info">SKILLS</h4>
+          <div class="about-skills">
+            <h5 id="skills-heading">SKILLS</h5>
             <img src="images/html-5.png" alt="" />
             <img src="images/css-3.png" alt="" />
             <a href="https://sass-lang.com/"><img src="images/sass.png" alt="" /></a>
@@ -89,5 +101,6 @@
       <p id="copyright">JORDAN ONWODI &COPY;2022</p>
     </footer>
   </div>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

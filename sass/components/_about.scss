@@ -1,0 +1,84 @@
+.about-section h4 {
+  color: black;
+  margin-left: 90px;
+  // margin-bottom: 35px;
+  line-height: 200px;
+}
+
+.about-section img {
+  height: 640px;
+  width: 605px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 90px;
+  border: 3px solid black;
+  // border-radius: 20px;
+}
+
+.about-section {
+  background-color: #ffffff;
+}
+
+#about-item1 {
+  margin-top: 7px;
+  // margin-top: 20px;
+  margin-left: 75px;
+}
+
+#skills-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-right: 475px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 10px;
+  color: #1dfb15;
+  text-decoration: underline;
+}
+
+.about-container {
+  display: flex;
+  // background-color: black;
+}
+
+.about-skills {
+  background-color: #ffffff;
+  // background-color: #1dfb15;
+  margin-left: 50px;
+}
+
+.about-skills img {
+  // height: 100px;
+  // width: 100px;
+  height: 50px;
+  width: 50px;
+  // margin-left: 50px;
+  // margin-right: 50px;
+  // margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  // display: flex;
+  border: none;
+}
+
+#django-logo1 {
+  // width: 200px;
+  width: 100px;
+}
+
+#django-logo2 {
+  // width: 200px;
+  width: 100px;
+}
+
+#about-item2 {
+  margin-left: 78px;
+  color: black;
+}

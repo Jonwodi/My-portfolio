@@ -1,0 +1,82 @@
+// css for mobile devices
+#nav__enquire {
+  border: 3px solid #1dfb15;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  color: #1dfb15;
+  font-size: 14px;
+}
+
+#nav__enquire:hover {
+  color: #ffffff;
+  border: 3px solid #ffffff;
+}
+
+#linkedin-mobile {
+  height: 25px;
+  width: 25px;
+}
+
+#github-mobile {
+  height: 25px;
+  width: 25px;
+}
+
+// css for desktop
+@include respond-to("small") {
+  .nav {
+    &__menu {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      align-items: center;
+      align-content: center;
+      li {
+        text-align: center;
+        color: #1dfb15;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+        display: flex;
+        margin-top: 60px;
+        margin-left: 0px;
+        margin-right: 65px;
+        letter-spacing: 5px;
+        text-shadow: 5px 5px black;
+        :hover {
+          color: #ffffff;
+        }
+      }
+    }
+    &__mobile {
+      display: none;
+    }
+  }
+
+  #nav__enquire {
+    border: 3px solid #1dfb15;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #1dfb15;
+    font-size: 14px;
+  }
+
+  #nav__enquire:hover {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+  }
+
+  #linkedin {
+    height: 50px;
+    width: 50px;
+  }
+
+  #github {
+    height: 50px;
+    width: 50px;
+  }
+}
