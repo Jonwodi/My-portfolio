@@ -524,7 +524,7 @@ body p {
 }
 
 .header h1 {
-  margin-top: -30px;
+  margin-top: 100px;
   margin-left: 35px;
   color: #ffffff;
   text-shadow: 5px 5px black;
@@ -551,29 +551,59 @@ body p {
   }
 }
 
-#nav__enquire {
+.nav__mobile {
+  position: absolute;
+  top: 450px;
+  left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.nav__hamburger {
+  margin-right: 100px;
+}
+
+.nav__mobile-links {
+  margin-left: 35px;
+}
+
+.nav__menu {
+  display: none;
+}
+
+#linkedin-mobile {
+  height: 40px;
+  width: 40px;
+}
+
+#github-mobile {
+  height: 40px;
+  width: 40px;
+}
+
+#nav-enquire-mobile {
   border: 3px solid #1dfb15;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
   color: #1dfb15;
   font-size: 14px;
 }
 
-#nav__enquire:hover {
+#nav-enquire-mobile:hover {
   color: #ffffff;
   border: 3px solid #ffffff;
-}
-
-#linkedin-mobile {
-  height: 25px;
-  width: 25px;
-}
-
-#github-mobile {
-  height: 25px;
-  width: 25px;
 }
 
 @media (min-width: 767px) {
