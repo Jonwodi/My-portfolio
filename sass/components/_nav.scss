@@ -1,22 +1,36 @@
 // css for mobile devices
 .nav {
+  display: grid;
+  grid-template-rows: min-content;
   &__mobile {
-    position: absolute;
-    top: 450px;
-    left: 35px;
     display: flex;
-    flex-flow: row no-wrap;
+    flex-flow: column wrap;
     align-items: center;
     align-content: center;
+    justify-content: center;
+    margin-top: 150px;
   }
   &__hamburger {
-    margin-right: 100px;
+    margin-top: 50px;
   }
   &__mobile-links {
-    margin-left: 35px;
   }
   &__menu {
     display: none;
+  }
+  &__dropl {
+    background-color: var(--light);
+    display: none;
+  }
+  &__toggle:checked ~ &__dropl {
+    display: block;
+    grid-row: 3 / 4;
+    li {
+      padding: 15rem 10rem;
+      border-bottom: 1px var(--delta) solid;
+      max-width: 100%;
+      text-align: center;
+    }
   }
 }
 
@@ -31,73 +45,73 @@
 }
 
 #nav-enquire-mobile {
-  border: 3px solid #1dfb15;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  color: #1dfb15;
-  font-size: 14px;
+  border: 3px ridge var(--bright);
+  color: var(--bright);
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  padding: 10px 40px 10px 40px;
+  letter-spacing: 5px;
 }
 
 #nav-enquire-mobile:hover {
-  color: #ffffff;
-  border: 3px solid #ffffff;
+  color: var(--light);
+  border: 3px ridge var(--light);
 }
 
 // css for desktop
 @include respond-to("small") {
   .nav {
+    input {
+      display: none;
+    }
     &__menu {
+      max-width: 100%;
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-end;
       align-items: center;
-      align-content: center;
       li {
+        color: var(--bright);
         text-align: center;
-        color: #1dfb15;
-        font-size: 14px;
         font-family: Helvetica;
         font-weight: bold;
-        display: flex;
-        margin-top: 60px;
-        margin-left: 0px;
-        margin-right: 65px;
+        margin: 60px 45px 0px 0px;
         letter-spacing: 5px;
-        text-shadow: 5px 5px black;
+        text-shadow: 5px 5px var(--dark);
         :hover {
-          color: #ffffff;
+          color: var(--light);
         }
       }
     }
     &__mobile {
       display: none;
     }
+    &__dropl {
+      display: none;
+    }
+    &__toggle:checked ~ &__dropl {
+      display: none;
+    }
   }
 
   #nav__enquire {
-    border: 3px solid #1dfb15;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 40px;
-    padding-left: 40px;
-    color: #1dfb15;
-    font-size: 14px;
+    border: 3px ridge var(--bright);
+    padding: 10px 40px 10px 40px;
   }
 
   #nav__enquire:hover {
-    color: #ffffff;
-    border: 3px solid #ffffff;
+    color: var(--light);
+    border: 3px ridge var(--light);
   }
 
-  #linkedin {
-    height: 50px;
-    width: 50px;
-  }
+  // #linkedin {
+  //   height: 50px;
+  //   width: 50px;
+  // }
 
-  #github {
-    height: 50px;
-    width: 50px;
-  }
+  // #github {
+  //   height: 50px;
+  //   width: 50px;
+  // }
 }

@@ -1,17 +1,17 @@
 #contact-form input {
   margin-bottom: 10px;
-  background-color: #fff;
+  background-color: var(--light);
   color: black;
 }
 
 #contact-form textarea {
   margin-bottom: 10px;
-  background-color: #fff;
-  color: black;
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 #contact-form label {
-  color: #fff;
+  color: var(--light);
   font-size: 40px;
 }
 
@@ -27,10 +27,10 @@ input#submit {
   font-weight: bold;
   padding: 5px 5px 5px 5px;
   // background-color: #1dfb15;
-  background-color: #1dfb15;
-  color: black;
+  background-color: var(--bright);
+  color: var(--dark);
   // color: #fff;
-  border: 3px solid black;
+  border: 3px solid var(--dark);
 }
 
 input#submit:hover {
@@ -41,9 +41,9 @@ input#submit:hover {
 #contact-header {
   margin-right: 400px;
   margin-left: 0px;
-  color: #1dfb15;
+  color: var(--bright);
   letter-spacing: 5px;
-  text-shadow: 5px 5px black;
+  text-shadow: 5px 5px var(--dark);
 }
 
 #contact-page {
@@ -68,7 +68,7 @@ input#submit:hover {
   width: 800px;
   padding: 20px;
   font-family: Helvetica;
-  border: 5px double #1dfb15;
+  border: 5px double var(--bright);
 }
 
 .form-fields textarea {
@@ -78,19 +78,18 @@ input#submit:hover {
   max-height: 200px;
   padding: 20px;
   font-family: Helvetica;
-  border: 5px double #1dfb15;
+  border: 5px double var(--bright);
 }
 
 label p {
   font-family: Helvetica;
   font-weight: bold;
   font-size: 50px;
-  // color: #1dfb15;
-  color: #fff;
+  color: var(--light);
   margin-right: 510px;
   letter-spacing: 5px;
-  text-shadow: 5px 5px black;
-  color: #1dfb15;
+  text-shadow: 5px 5px var(--dark);
+  color: var(--bright);
 }
 
 .input-header {
@@ -102,5 +101,5 @@ label p {
 }
 
 #contact-page {
-  background-color: #fff;
+  background-color: var(--light);
 }

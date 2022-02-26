@@ -1,5 +1,5 @@
 .about-section h4 {
-  color: black;
+  color: var(--dark);
   margin-left: 90px;
   // margin-bottom: 35px;
   line-height: 200px;
@@ -16,7 +16,7 @@
 }
 
 .about-section {
-  background-color: #ffffff;
+  background-color: var(--light);
 }
 
 #about-item1 {
@@ -38,7 +38,7 @@
   font-weight: bold;
   font-size: 35px;
   letter-spacing: 10px;
-  color: #1dfb15;
+  color: var(--bright);
   text-decoration: underline;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .about-skills {
-  background-color: #ffffff;
+  background-color: var(--light);
   // background-color: #1dfb15;
   margin-left: 50px;
 }
@@ -80,5 +80,5 @@
 
 #about-item2 {
   margin-left: 78px;
-  color: black;
+  color: var(--dark);
 }
