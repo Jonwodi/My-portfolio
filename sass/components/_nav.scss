@@ -1,71 +1,30 @@
-// css for mobile devices
 .nav {
   display: grid;
   grid-template-rows: min-content;
+  @include respond-to("small") {
+    input {
+      display: none;
+    }
+  }
+
   &__mobile {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin-top: 150px;
+    // margin-top: 150rem;
+    margin-top: 50rem;
+    @include respond-to("small") {
+      display: none;
+    }
   }
   &__hamburger {
-    margin-top: 50px;
-  }
-  &__mobile-links {
+    margin-top: 50rem;
   }
   &__menu {
     display: none;
-  }
-  &__dropl {
-    background-color: var(--light);
-    display: none;
-  }
-  &__toggle:checked ~ &__dropl {
-    display: block;
-    grid-row: 3 / 4;
-    li {
-      padding: 15rem 10rem;
-      border-bottom: 1px var(--delta) solid;
-      max-width: 100%;
-      text-align: center;
-    }
-  }
-}
-
-#linkedin-mobile {
-  height: 40px;
-  width: 40px;
-}
-
-#github-mobile {
-  height: 40px;
-  width: 40px;
-}
-
-#nav-enquire-mobile {
-  border: 3px ridge var(--bright);
-  color: var(--bright);
-  text-align: center;
-  font-family: Helvetica;
-  font-weight: bold;
-  padding: 10px 40px 10px 40px;
-  letter-spacing: 5px;
-}
-
-#nav-enquire-mobile:hover {
-  color: var(--light);
-  border: 3px ridge var(--light);
-}
-
-// css for desktop
-@include respond-to("small") {
-  .nav {
-    input {
-      display: none;
-    }
-    &__menu {
+    @include respond-to("small") {
       max-width: 100%;
       display: flex;
       flex-flow: row wrap;
@@ -76,42 +35,89 @@
         text-align: center;
         font-family: Helvetica;
         font-weight: bold;
-        margin: 60px 45px 0px 0px;
-        letter-spacing: 5px;
-        text-shadow: 5px 5px var(--dark);
+        margin: 60rem 45rem 0rem 0rem;
+        letter-spacing: 5rem;
+        text-shadow: 5rem 5rem var(--dark);
         :hover {
           color: var(--light);
         }
       }
     }
-    &__mobile {
-      display: none;
-    }
-    &__dropl {
-      display: none;
-    }
-    &__toggle:checked ~ &__dropl {
+  }
+  &__dropl {
+    background-color: var(--light);
+    display: none;
+    @include respond-to("small") {
       display: none;
     }
   }
+  &__toggle:checked ~ &__dropl {
+    display: block;
+    grid-row: 3 / 4;
+    border-top: 3rem solid var(--light);
+    @include respond-to("small") {
+      display: none;
+    }
+    li {
+      padding: 15rem 10rem;
+      // border: 2rem var(--light) solid;
+      background-color: var(--dark);
+      color: var(--light);
+      max-width: 100%;
+      text-align: center;
+      // font-family: Helvetica;
+      font-family: "GemunuLibre Medium";
 
-  #nav__enquire {
-    border: 3px ridge var(--bright);
-    padding: 10px 40px 10px 40px;
+      font-weight: bold;
+      font-size: 16rem;
+      letter-spacing: 5rem;
+    }
   }
-
-  #nav__enquire:hover {
-    color: var(--light);
-    border: 3px ridge var(--light);
-  }
-
-  // #linkedin {
-  //   height: 50px;
-  //   width: 50px;
-  // }
-
-  // #github {
-  //   height: 50px;
-  //   width: 50px;
-  // }
 }
+
+#linkedin-mobile {
+  height: 40rem;
+  width: 40rem;
+}
+
+#github-mobile {
+  height: 40rem;
+  width: 40rem;
+}
+
+#nav-enquire-mobile {
+  border: 3rem ridge var(--bright);
+  background-color: var(--dark);
+  color: var(--bright);
+  text-align: center;
+  font-family: "GemunuLibre Medium";
+  font-weight: bold;
+  padding: 10rem 40rem 10rem 40rem;
+  letter-spacing: 5rem;
+}
+
+#nav-enquire-mobile:hover {
+  color: var(--light);
+  border: 3rem ridge var(--light);
+}
+
+#nav__enquire {
+  border: 3rem ridge var(--bright);
+  padding: 10rem 40rem 10rem 40rem;
+}
+
+#nav__enquire:hover {
+  color: var(--light);
+  border: 3rem ridge var(--light);
+}
+
+// #linkedin {
+//   height: 50rem;
+//   width: 50rem;
+// }
+
+// #github {
+//   height: 50rem;
+//   width: 50rem;
+// }
+// }

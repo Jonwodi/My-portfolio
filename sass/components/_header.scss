@@ -1,9 +1,18 @@
-// css for mobile devices
 .header {
   display: grid;
-  grid-template-rows: min-content min-content;
+  grid-template-rows: repeat(2, min-content);
+  background: url(/images/software.jpg) no-repeat fixed;
+  max-width: 100%;
+  background-size: 100% 100%;
+  height: auto;
+  @include respond-to("small") {
+    display: block;
+    max-width: 100%;
+    background-size: 100% 100%;
+    height: 1036rem;
+  }
   div {
-    margin-top: 140px;
+    margin-top: 140rem;
     grid-row: 1/2;
     display: flex;
     flex-flow: column wrap;
@@ -12,51 +21,23 @@
     align-items: center;
     max-width: 100%;
     overflow: scroll;
+    @include respond-to("small") {
+      display: block;
+    }
   }
-  background: url(/images/software.jpg) no-repeat fixed;
-  // background-size: 720px 518px;
-  // background-size: 375px 518px;
-  max-width: 100%;
-  background-size: 100% 100%;
-  height: auto;
-  // width: 100%;
   h1 {
-    // margin-left: auto;
-    // margin-right: auto;
     color: var(--light);
-    text-shadow: 5px 5px var(--dark);
+    text-shadow: 10rem 10rem var(--dark);
+    @include respond-to("small") {
+      margin-left: 140rem;
+    }
   }
   h3 {
-    // margin-left: 20px;
-    // margin-left: auto;
-    // margin-right: auto;
-    text-shadow: 5px 5px var(--dark);
+    text-shadow: 5rem 5rem var(--dark);
     color: var(--bright);
-  }
-}
-
-// css for desktop devices
-@include respond-to("small") {
-  .header {
-    display: block;
-    div {
-      display: block;
-      margin-top: 140px;
-    }
-    // background-size: 1440px 1036px;
-    max-width: 100%;
-    // background-size: 100% 1036px;
-    // height: 1036px;
-    background-size: 100% 100%;
-    height: auto;
-    h1 {
-      margin-left: 140px;
-      // margin-left: 60px;
-    }
-    h3 {
-      margin-left: 140px;
-      // margin-left: 60px;
-      padding-bottom: 140px;
+    @include respond-to("small") {
+      margin-left: 140rem;
+      // padding-bottom: 140rem; / Use this padding if height on large devices is set to auto
     }
   }
 }
