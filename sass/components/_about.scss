@@ -93,6 +93,8 @@
 // }
 
 .about {
+  display: flex;
+  flex-flow: column wrap;
   background-color: var(--dark);
   padding: 100rem 100rem 0rem 100rem;
   border-top: 3rem solid var(--bright);
@@ -106,6 +108,7 @@
     p {
       color: var(--light);
       text-align: center;
+      margin-bottom: 50rem;
     }
     @include respond-to("small") {
       display: flex;
@@ -125,10 +128,12 @@
       }
     }
   }
-  img {
-    max-width: 100%;
-    height: auto;
-    // border: 3rem solid var(--bright);
+  &__image-placeholder {
+    width: 100%;
+    background-image: url(/images/myphoto.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 302.5rem;
     margin-top: 20rem;
     @include respond-to("small") {
       padding-right: 0rem;
@@ -149,17 +154,27 @@
   }
   &__links {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     align-items: center;
-    max-width: 100%;
+    row-gap: 25rem;
+    @include respond-to("small") {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-end;
+      align-content: center;
+      justify-content: flex-start;
+      column-gap: 130rem;
+    }
+    li {
+    }
     img {
-      width: 200rem;
+      width: 50rem;
       height: 50rem;
     }
   }
 }
 
-#about-enquire {
+#about-resume {
   border: 3rem ridge var(--bright);
   color: var(--bright);
   text-align: center;
@@ -167,11 +182,17 @@
   font-weight: bold;
   padding: 10rem 40rem 10rem 40rem;
   letter-spacing: 5rem;
-  width: 200rem;
-  font-size: 25rem;
+  margin-bottom: 0rem;
+  @include respond-to("small") {
+    border: 3rem ridge var(--bright);
+    color: var(--bright);
+    font-family: "GemunuLibre Medium";
+    padding: 10rem 40rem 10rem 40rem;
+    letter-spacing: 5rem;
+  }
 }
 
-#about-enquire:hover {
+#about-resume:hover {
   color: var(--light);
   border: 3rem ridge var(--light);
 }
