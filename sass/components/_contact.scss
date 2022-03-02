@@ -1,105 +1,143 @@
-#contact-form input {
-  margin-bottom: 10px;
-  background-color: var(--light);
-  color: black;
-}
-
-#contact-form textarea {
-  margin-bottom: 10px;
-  background-color: var(--light);
-  color: var(--dark);
-}
-
-#contact-form label {
-  color: var(--light);
-  font-size: 40px;
-}
-
-input#submit {
+.contact {
   display: flex;
-  justify-content: center;
-  margin-left: 640px;
-  margin-top: 10px;
-  font-size: 25px;
-  width: 160px;
-  height: 75px;
-  font-family: Helvetica;
-  font-weight: bold;
-  padding: 5px 5px 5px 5px;
-  // background-color: #1dfb15;
-  background-color: var(--bright);
-  color: var(--dark);
-  // color: #fff;
-  border: 3px solid var(--dark);
-}
-
-input#submit:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-#contact-header {
-  margin-right: 400px;
-  margin-left: 0px;
-  color: var(--bright);
-  letter-spacing: 5px;
-  text-shadow: 5px 5px var(--dark);
-}
-
-#contact-page {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-}
-
-.form-fields label {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.form-fields input {
-  width: 800px;
-  padding: 20px;
-  font-family: Helvetica;
-  border: 5px double var(--bright);
-}
-
-.form-fields textarea {
-  min-width: 800px;
-  max-width: 800px;
-  min-height: 200px;
-  max-height: 200px;
-  padding: 20px;
-  font-family: Helvetica;
-  border: 5px double var(--bright);
-}
-
-label p {
-  font-family: Helvetica;
-  font-weight: bold;
-  font-size: 50px;
-  color: var(--light);
-  margin-right: 510px;
-  letter-spacing: 5px;
-  text-shadow: 5px 5px var(--dark);
-  color: var(--bright);
-}
-
-.input-header {
-  margin-right: 600px;
-}
-
-.form-fields {
-  margin-bottom: 20px;
-}
-
-#contact-page {
   background-color: var(--light);
+  border-top: 3rem solid var(--bright);
+  padding: 100rem 0rem 0rem 0rem;
+  max-width: 100%;
+  height: auto;
+
+  form {
+    max-width: 100%;
+  }
+
+  h4 {
+    text-align: center;
+    text-shadow: 5rem 5rem var(--dark);
+    margin-bottom: 50rem;
+    letter-spacing: 5rem;
+    color: var(--bright);
+    @include respond-to("small") {
+    }
+  }
+
+  input {
+    margin-bottom: 10rem;
+    background-color: var(--bright);
+    color: var(--dark);
+    width: 100%;
+    padding: 20rem;
+    font-family: "GemunuLibre Medium";
+    border: 5rem double var(--dark);
+    @include respond-to("small") {
+      width: 800rem;
+    }
+  }
+  // #contact-form input {
+  //   margin-bottom: 10rem;
+  //   background-color: var(--bright);
+  //   color: var(--dark);
+  // }
+
+  textarea {
+    margin-bottom: 10rem;
+    background-color: var(--bright);
+    color: var(--dark);
+  }
+
+  // #contact-form textarea {
+  //   margin-bottom: 10rem;
+  //   background-color: var(--bright);
+  //   color: var(--dark);
+  // }
+  label {
+    color: var(--dark);
+    font-size: 40rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  // #contact-form label {
+  //   color: var(--dark);
+  //   font-size: 40rem;
+  // }
+
+  input#submit {
+    margin-top: 10rem;
+    font-size: 25rem;
+    width: 160rem;
+    height: 75rem;
+    font-family: "GemunuLibre Medium";
+    font-weight: bold;
+    padding: 5rem;
+    background-color: var(--bright);
+    color: var(--dark);
+    border: 3rem solid var(--dark);
+  }
+
+  input#submit:hover {
+    cursor: pointer;
+  }
+
+  // .form-fields label {
+  //   display: flex;
+  //   flex-flow: column wrap;
+  //   justify-content: center;
+  //   align-items: center;
+  //   align-content: center;
+  // }
+
+  // .form-fields input {
+  //   width: 100%;
+  //   padding: 20rem;
+  //   font-family: "GemunuLibre Medium";
+  //   border: 5rem double var(--bright);
+  //   @include respond-to("small") {
+  //     width: 800rem;
+  //   }
+  // }
+
+  // .form-fields textarea {
+  //   min-width: 800rem;
+  //   max-width: 800rem;
+  //   min-height: 200rem;
+  //   padding: 20rem;
+  //   font-family: "GemunuLibre Medium";
+  //   border: 5rem double var(--dark);
+  // }
+
+  textarea {
+    max-width: 100%;
+    min-height: 200rem;
+    padding: 20rem;
+    font-family: "GemunuLibre Medium";
+    border: 5rem double var(--dark);
+    @include respond-to("small") {
+      min-width: 800rem;
+      max-width: 800rem;
+    }
+  }
+
+  label p {
+    font-weight: bold;
+    font-size: 35rem;
+    // margin-right: 510rem;
+    // letter-spacing: 5rem;
+    // text-shadow: 5px 5px var(--dark);
+    color: var(--dark);
+  }
+
+  .input-header {
+    // margin-right: 600rem;
+  }
+
+  &__form-fields {
+    margin-bottom: 20rem;
+  }
 }

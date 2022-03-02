@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <!-- <div id="page"> -->
     <header class="header">
         <nav class="nav">
           <input type="checkbox" class="nav__toggle" id="hamburger" hidden />
@@ -20,14 +19,14 @@
             <li><a href="index.html"><p>Home</p></a></li>
             <li><a href="#about"><p>About</p></a></li>
             <li><a href="#work"><p>Work</p></a></li>
-            <li><a href="#contact-page"><p>Contact</p></a></li>
+            <li><a href="#contact"><p>Contact</p></a></li>
             <li id="nav__enquire"><a href="mailto:Jonwodi@hotmail.co.uk"><p>Enquire</p></a></li>
           </ul>
           <ul class="nav__dropl">
             <a href="index.html"><li>Home</li></a>
             <a href="#about"><li>About</li></a>
             <a href="#work"><li>Work</li></a>
-            <a href="#contact-page"><li>Contact</li></a>
+            <a href="#contact"><li>Contact</li></a>
           </ul>
         </nav>
         <div>
@@ -36,16 +35,16 @@
         </div>
     </header>
 
-    <section class="about">
-      <h4 id="about">ABOUT ME</h4>
+    <section id="about" class="about">
+      <h4>ABOUT ME</h4>
       <div class="about__container">
         <div class="about__image-placeholder"></div>
         <div>
           <p>Hello World! I'm Jordan Onwodi, a Full-Stack Developer. The world of software and technology is ever expanding, more than ever and the demand for skill and talent is needed more than ever. Whether you need help building a website, web app or something as simple as a landing page. Then I'm the developer for you. I love using my creativity and logic to build things and I'm sure if you utilise my services you won't be left disappointed. Why not give my services a try.</p>
           <ul class="about__links">
-            <li><a href=""><p id="about-resume">Résumé</p></a></li>
             <li><a href=""><img src="images/github.png" alt=""></a></li>
-            <li><a href=""></a><img src="" alt=""></li>
+            <li><a href=""><p id="about-resume">Résumé</p></a></li>
+            <li><a href=""></a><img src="images/linkedin.png" alt=""></li>
           </ul>
         </div>
       </div>
@@ -54,10 +53,10 @@
     <section class="skills">
       <h4>Skills</h4>
       <div class="skills__container">
-        <div class="skills__items"><a href=""><img src="images/html-5.png" alt=""><p>HTML 5</p></a></div>
-        <div class="skills__items"><a href=""><img src="images/css-3.png" alt=""><p>CSS 3</p></a></div>
-        <div class="skills__items"><a href="https://sass-lang.com/"><img src="images/sass.png" alt=""><p>SASS</p></a></div>
-        <div class="skills__items"><a href="https://www.figma.com/"><img src="images/figma.png" alt=""><p>FIGMA</p></a></div>
+        <div class="skills__items"><a href=""><img src="images/html-5.png" alt=""><p>HTML</p></a></div>
+        <div class="skills__items"><a href=""><img src="images/css-3.png" alt=""><p>CSS</p></a></div>
+        <div class="skills__items"><a href="https://sass-lang.com/"><img src="images/sass.png" alt=""><p>Sass</p></a></div>
+        <div class="skills__items"><a href="https://www.figma.com/"><img src="images/figma.png" alt=""><p>Figma</p></a></div>
         <div class="skills__items"><a href="https://www.javascript.com/"><img src="images/js.png" alt=""><p>JavaScript</p></a></div>
         <div class="skills__items"><a href="https://www.typescriptlang.org/"><img src="images/typescript.png" alt=""><p>TypeScript</p></a></div>
         <div class="skills__items"><a href="https://reactjs.org/"><img src="images/react.png" alt=""><p>React JS</p></a></div>
@@ -67,37 +66,34 @@
         <div class="skills__items"><a href="https://www.postgresql.org/"><img src="images/postgres.png" alt=""><p>PostgresSQL</p></a></div>
         <div class="skills__items"><a href="https://git-scm.com/"><img src="images/git.png" alt=""><p>Git</p></a></div>
         <div class="skills__items"><a href="https://www.docker.com/"><img src="images/docker.png" alt=""><p>Docker</p></a></div>
-        <div class="skills__items"><a href="https://code.visualstudio.com/"><img src="images/visual-studio.png" alt=""><p>Visual Studio Code</p></a></div>
+        <div class="skills__items"><a href="https://code.visualstudio.com/"><img src="images/visual-studio.png" alt=""><p>VS Code</p></a></div>
         <div class="skills__items"><a href="https://www.djangoproject.com/"><img id="django-img1" src="images/django.png" alt=""><p>Django</p></a></div>
         <div class="skills__items"><a href="https://www.django-rest-framework.org/"><img id="django-img2" src="images/django-rest.png" alt=""><p>Django Rest Framework</p></a></div>
       </div>
     </section>
+    <!-- <p id="about-item2">Hello there! My name is Jordan Onwodi. I really enjoy coding and I'm always looking for opportunities to further expand my knowledge in both the frontend and backend software development world. My favorite backend programming language to work with is python using the django web framework. Whilst, when it comes to frontend development. I have to admit, I'm in love with using React JS.
+      However, I love learning new things and working with unfamilar technologies in this ever expanding world of software. During my free time you can find me working in the gym, playing basketball with my friends, reading investment books or cycling and exploring different locations in the UK.
+    </p> -->
 
-      <!-- <p id="about-item2">Hello there! My name is Jordan Onwodi. I really enjoy coding and I'm always looking for opportunities to further expand my knowledge in both the frontend and backend software development world. My favorite backend programming language to work with is python using the django web framework. Whilst, when it comes to frontend development. I have to admit, I'm in love with using React JS.
-        However, I love learning new things and working with unfamilar technologies in this ever expanding world of software. During my free time you can find me working in the gym, playing basketball with my friends, reading investment books or cycling and exploring different locations in the UK.
-      </p> -->
-
-    <!-- <section>
-      <h1 class="project-title" id="work">Portfolio</h1>
-      <div class="projects">
-        <div class="project-box">
-          <div class="project-boxes"><a href=""><img src="images/ldn-fitness.png" alt=""></a> <p class="para">HELLO JAY</p></div>
-          <div><a href="https://jonwodi.github.io/jobplus_react_frontend-Project/"><img src="images/jobplus.png" alt=""></a></div>
-          <div><a href=""><img src="images/restuarant-booking.png" alt=""></a></div>
-        </div>
-      </div>
+    <section id="work" class="work">
+      <h4>Projects</h4>
+      <div class="work__projects"><a href=""><h6>LDN Central Fitness Club</h6><p>Hello</p><img src="images/ldn-fitness.png" alt=""></a></div>
+      <div class="work__projects"><a href=""><img src="images/jobplus.png" alt=""></a><p>Hello</p></div>
+      <div class="work__projects"><a href=""><img src="images/restuarant-booking.png" alt=""></a><p>Hello</p></div>
     </section>
-    <section id="contact-page">
-      <h1 id="contact-header">Contact</h1>
+
+    <section id="contact" class="contact">
+      <h4>Contact</h4>
       <form action="https://formsubmit.co/0dc9e26dfc198ab3b64b26117b4a3e36" method="POST" id="contact-form">
-        <div class="form-fields"><label for="name"><p class="input-header">Name *</p><input type="text" name="name" maxlength="" id="name" required="required" placeholder="Enter your name"></label></div>
-        <div class="form-fields"><label for="email"><p class="input-header">Email *</p><input type="email" name="email" maxlength="" id="email" required="required" placeholder="Enter your email address"></label></div>
-        <div class="form-fields"><label for="message"><p>Message *</p><textarea name="" id="message" cols="30" rows="5" required="required" placeholder="How can I help you?"></textarea></label></div>
+        <div class="contact__form-fields"><label for="name"><p class="input-header">Name *</p><input type="text" name="name" maxlength="" id="name" required="required" placeholder="Enter your name"></label></div>
+        <div class="contact__form-fields"><label for="email"><p class="input-header">Email *</p><input type="email" name="email" maxlength="" id="email" required="required" placeholder="Enter your email address"></label></div>
+        <div class="contact__form-fields"><label for="message"><p>Message *</p><textarea name="" id="message" cols="30" rows="5" required="required" placeholder="How can I help you?"></textarea></label></div>
         <div class="send"><input type="submit" name="submit" value="Submit" id="submit"></div>
       </form>
     </section>
+    
     <footer class="footer">
-      <div class="footer-top">
+      <div class="footer__top">
         <a href="index.html"><p>Home</p></a>
         <a href="#about"><p>About</p></a>
         <a href="#work"><p>Work</p></a>
@@ -105,10 +101,9 @@
       </div>
       <a href="https://github.com/Jonwodi"><img src="images/github.png" alt="GitHub" width="50px" height="50px"></a>
       <a href="https://www.linkedin.com/in/jordan-onwodi/"><img src="images/linkedin.png" alt="Linkedin" width="50px" height="50px"></a>
-      <a href="mailto:Jonwodi@hotmail.co.uk"><p class="footer-enquire">Enquire</p></a>
+      <a href="mailto:Jonwodi@hotmail.co.uk"><p class="footer__enquire">Enquire</p></a>
       <p id="copyright">JORDAN ONWODI &COPY;2022</p>
-    </footer> --> -->
-  <!-- </div>
-  <script src="js/scripts.js"></script> -->
+    </footer> 
+  <script src="js/scripts.js"></script> 
 </body>
 </html>

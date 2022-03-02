@@ -98,12 +98,15 @@
   background-color: var(--dark);
   padding: 100rem 100rem 0rem 100rem;
   border-top: 3rem solid var(--bright);
+  max-width: 100%;
   @include respond-to("small") {
     padding: 100rem 0rem 0rem 0rem;
   }
+
   &__container {
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
     row-gap: 50rem;
     p {
       color: var(--light);
@@ -111,27 +114,21 @@
       margin-bottom: 50rem;
     }
     @include respond-to("small") {
-      display: flex;
-      flex-flow: row nowrap;
-      column-gap: 150rem;
-      justify-content: flex-start;
-      align-items: flex-start;
-      align-content: flex-start;
+      // display: flex;
+      // flex-flow: column wrap;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+      // align-content: flex-start;
       p {
-        max-width: 600rem;
-        text-align: left;
-        // padding-left: 130rem;
-        margin-top: 15rem;
+        text-align: center;
         color: var(--light);
-        // margin-right: 45rem;
         margin-bottom: 50rem;
       }
     }
   }
   &__image-placeholder {
+    background: url(/images/myphoto.jpeg) no-repeat scroll;
     width: 100%;
-    background-image: url(/images/myphoto.jpeg);
-    background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 302.5rem;
     margin-top: 20rem;
@@ -141,9 +138,10 @@
       height: 640rem;
       width: 605rem;
       margin-bottom: 100rem;
-      margin-left: 50rem;
+      margin-left: 10rem;
     }
   }
+
   h4 {
     text-align: center;
     // text-shadow: 5rem 5rem var(--bright);
@@ -152,24 +150,25 @@
     @include respond-to("small") {
     }
   }
+
   &__links {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items: center;
     row-gap: 25rem;
+    margin-bottom: 100rem;
     @include respond-to("small") {
       display: flex;
       flex-flow: row wrap;
-      align-items: flex-end;
+      align-items: center;
       align-content: center;
-      justify-content: flex-start;
-      column-gap: 130rem;
+      justify-content: space-evenly;
     }
     li {
     }
     img {
-      width: 50rem;
-      height: 50rem;
+      width: 60rem;
+      height: 60rem;
     }
   }
 }
