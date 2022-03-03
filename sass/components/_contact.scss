@@ -12,6 +12,14 @@
 
   form {
     max-width: 100%;
+    margin-bottom: 40rem;
+    @include respond-to("small") {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-end;
+      align-content: flex-end;
+      align-items: flex-end;
+    }
   }
 
   h4 {
@@ -20,8 +28,6 @@
     margin-bottom: 50rem;
     letter-spacing: 5rem;
     color: var(--bright);
-    @include respond-to("small") {
-    }
   }
 
   input {
@@ -32,27 +38,76 @@
     padding: 20rem;
     font-family: "GemunuLibre Medium";
     border: 5rem double var(--dark);
+
     @include respond-to("small") {
       width: 800rem;
     }
   }
-  // #contact-form input {
-  //   margin-bottom: 10rem;
-  //   background-color: var(--bright);
-  //   color: var(--dark);
-  // }
+
+  input::placeholder {
+    color: var(--dark);
+    text-align: center;
+
+    @include respond-to("small") {
+      text-align: left;
+    }
+  }
+
+  input:focus {
+    outline: none;
+  }
 
   textarea {
     margin-bottom: 10rem;
     background-color: var(--bright);
     color: var(--dark);
+    max-width: 100%;
+    padding: 20rem;
+    min-height: 200rem;
+    font-family: "GemunuLibre Medium";
+    border: 5rem double var(--dark);
+
+    @include respond-to("small") {
+      min-width: 800rem;
+      max-width: 800rem;
+    }
   }
 
-  // #contact-form textarea {
-  //   margin-bottom: 10rem;
-  //   background-color: var(--bright);
-  //   color: var(--dark);
-  // }
+  textarea::placeholder {
+    color: var(--dark);
+    text-align: center;
+
+    @include respond-to("small") {
+      text-align: left;
+    }
+  }
+
+  textarea:focus {
+    outline: none;
+  }
+
+  input#submit {
+    margin-top: 10rem;
+    font-size: 25rem;
+    letter-spacing: 5rem;
+    width: 160rem;
+    height: 75rem;
+    font-family: "GemunuLibre Medium";
+    font-weight: bold;
+    padding: 5rem;
+    text-align: center;
+    background-color: var(--bright);
+    color: var(--dark);
+    border: 3rem solid var(--dark);
+  }
+
+  input#submit:hover {
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--bright);
+    border: 3rem solid var(--bright);
+  }
+
   label {
     color: var(--dark);
     font-size: 40rem;
@@ -61,80 +116,17 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-  }
 
-  // #contact-form label {
-  //   color: var(--dark);
-  //   font-size: 40rem;
-  // }
-
-  input#submit {
-    margin-top: 10rem;
-    font-size: 25rem;
-    width: 160rem;
-    height: 75rem;
-    font-family: "GemunuLibre Medium";
-    font-weight: bold;
-    padding: 5rem;
-    background-color: var(--bright);
-    color: var(--dark);
-    border: 3rem solid var(--dark);
-  }
-
-  input#submit:hover {
-    cursor: pointer;
-  }
-
-  // .form-fields label {
-  //   display: flex;
-  //   flex-flow: column wrap;
-  //   justify-content: center;
-  //   align-items: center;
-  //   align-content: center;
-  // }
-
-  // .form-fields input {
-  //   width: 100%;
-  //   padding: 20rem;
-  //   font-family: "GemunuLibre Medium";
-  //   border: 5rem double var(--bright);
-  //   @include respond-to("small") {
-  //     width: 800rem;
-  //   }
-  // }
-
-  // .form-fields textarea {
-  //   min-width: 800rem;
-  //   max-width: 800rem;
-  //   min-height: 200rem;
-  //   padding: 20rem;
-  //   font-family: "GemunuLibre Medium";
-  //   border: 5rem double var(--dark);
-  // }
-
-  textarea {
-    max-width: 100%;
-    min-height: 200rem;
-    padding: 20rem;
-    font-family: "GemunuLibre Medium";
-    border: 5rem double var(--dark);
     @include respond-to("small") {
-      min-width: 800rem;
-      max-width: 800rem;
+      align-items: flex-start;
     }
   }
 
   label p {
     font-weight: bold;
     font-size: 35rem;
-    // margin-right: 510rem;
     // letter-spacing: 5rem;
-    // text-shadow: 5px 5px var(--dark);
     color: var(--dark);
-  }
-
-  .input-header {
-    // margin-right: 600rem;
   }
 
   &__form-fields {

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   background-color: var(--dark);
   border-top: 3rem solid var(--bright);
@@ -12,36 +12,57 @@
 
   h4 {
     text-align: center;
-    // text-shadow: 5rem 5rem var(--bright);
     margin-bottom: 50rem;
     color: var(--bright);
-    @include respond-to("small") {
-    }
   }
 
   &__projects {
     color: var(--bright);
     margin-bottom: 250rem;
+    max-width: 100%;
+
+    @include respond-to("small") {
+      max-width: 900rem;
+    }
   }
 
-  &__boxes {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-end;
+  &__gitlinks {
+    background-color: var(--light);
+    max-width: 100%;
+    text-align: center;
+    padding: 3rem;
+    color: var(--dark);
+    letter-spacing: 5rem;
+    max-width: 100%;
+    :hover {
+      background-color: var(--bright);
+      max-width: 900rem;
+    }
   }
 
   img {
     border: 3rem solid var(--light);
     max-width: 100%;
     @include respond-to("small") {
-      width: 900rem;
+      max-width: 900rem;
       height: 600rem;
     }
   }
 
   img:hover {
     border: 3rem solid var(--bright);
+  }
+
+  h6 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  span {
+    color: var(--light);
   }
 }

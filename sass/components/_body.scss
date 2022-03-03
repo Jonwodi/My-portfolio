@@ -1,0 +1,51 @@
+body {
+  h1 {
+    font-family: "GemunuLibre ExtraBold";
+    font-size: 80rem;
+    letter-spacing: 5rem;
+
+    @include respond-to("small") {
+      font-size: 100rem;
+    }
+  }
+
+  h3 {
+    font-family: "GemunuLibre ExtraBold";
+    font-size: 50rem;
+    letter-spacing: 5rem;
+
+    @include respond-to("small") {
+      font-size: 65rem;
+    }
+  }
+
+  h4 {
+    font-family: "GemunuLibre ExtraBold";
+    font-size: 35rem;
+    letter-spacing: 5rem;
+
+    @include respond-to("small") {
+      font-size: 50rem;
+    }
+  }
+
+  h6 {
+    font-family: "GemunuLibre ExtraBold";
+    font-size: 20rem;
+    letter-spacing: 5rem;
+
+    @include respond-to("small") {
+      font-size: 40rem;
+    }
+  }
+
+  p {
+    font-family: "GemunuLibre Medium";
+    font-size: 20rem;
+    word-spacing: 5rem;
+
+    @include respond-to("small") {
+      font-size: 25rem;
+    }
+  }
+}

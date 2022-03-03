@@ -1,6 +1,8 @@
 .nav {
+  max-width: 100%;
   display: grid;
   grid-template-rows: min-content;
+
   @include respond-to("small") {
     input {
       display: none;
@@ -8,13 +10,14 @@
   }
 
   &__mobile {
+    max-width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     align-content: center;
     justify-content: center;
-    // margin-top: 150rem;
     margin-top: 50rem;
+
     @include respond-to("small") {
       display: none;
     }
@@ -26,12 +29,14 @@
 
   &__menu {
     display: none;
+
     @include respond-to("small") {
       max-width: 100%;
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-end;
       align-items: center;
+
       li {
         color: var(--bright);
         text-align: center;
@@ -40,6 +45,7 @@
         margin: 60rem 45rem 0rem 0rem;
         letter-spacing: 5rem;
         text-shadow: 5rem 5rem var(--dark);
+
         :hover {
           color: var(--light);
         }
@@ -50,18 +56,17 @@
   &__dropl {
     background-color: var(--light);
     display: none;
-    @include respond-to("small") {
-      display: none;
-    }
   }
 
   &__toggle:checked ~ &__dropl {
     display: block;
     grid-row: 3 / 4;
     border-top: 3rem solid var(--light);
+
     @include respond-to("small") {
       display: none;
     }
+
     li {
       padding: 15rem 10rem;
       background-color: var(--dark);
@@ -73,56 +78,36 @@
       font-size: 16rem;
       letter-spacing: 5rem;
     }
+
     li:hover {
       color: var(--light);
       background-color: var(--bright);
     }
   }
+
+  #nav-enquire-mobile {
+    border: 3rem ridge var(--bright);
+    background-color: var(--dark);
+    color: var(--bright);
+    text-align: center;
+    font-family: "GemunuLibre Medium";
+    font-weight: bold;
+    padding: 10rem 40rem 10rem 40rem;
+    letter-spacing: 5rem;
+  }
+
+  #nav-enquire-mobile:hover {
+    color: var(--light);
+    border: 3rem ridge var(--light);
+  }
+
+  #nav__enquire {
+    border: 3rem ridge var(--bright);
+    padding: 10rem 40rem 10rem 40rem;
+  }
+
+  #nav__enquire:hover {
+    color: var(--light);
+    border: 3rem ridge var(--light);
+  }
 }
-
-#linkedin-mobile {
-  height: 40rem;
-  width: 40rem;
-}
-
-#github-mobile {
-  height: 40rem;
-  width: 40rem;
-}
-
-#nav-enquire-mobile {
-  border: 3rem ridge var(--bright);
-  background-color: var(--dark);
-  color: var(--bright);
-  text-align: center;
-  font-family: "GemunuLibre Medium";
-  font-weight: bold;
-  padding: 10rem 40rem 10rem 40rem;
-  letter-spacing: 5rem;
-}
-
-#nav-enquire-mobile:hover {
-  color: var(--light);
-  border: 3rem ridge var(--light);
-}
-
-#nav__enquire {
-  border: 3rem ridge var(--bright);
-  padding: 10rem 40rem 10rem 40rem;
-}
-
-#nav__enquire:hover {
-  color: var(--light);
-  border: 3rem ridge var(--light);
-}
-
-// #linkedin {
-//   height: 50rem;
-//   width: 50rem;
-// }
-
-// #github {
-//   height: 50rem;
-//   width: 50rem;
-// }
-// }
