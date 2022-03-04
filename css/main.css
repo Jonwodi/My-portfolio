@@ -647,6 +647,12 @@ body p {
   margin-top: 50rem;
 }
 
+.nav__hamburger :hover {
+  -webkit-filter: invert(51%) sepia(62%) saturate(1184%) hue-rotate(78deg) brightness(123%) contrast(102%);
+          filter: invert(51%) sepia(62%) saturate(1184%) hue-rotate(78deg) brightness(123%) contrast(102%);
+  cursor: pointer;
+}
+
 .nav__menu {
   display: none;
 }
@@ -783,6 +789,14 @@ body p {
   color: var(--light);
   text-align: center;
   margin-bottom: 50rem;
+  max-width: 100%;
+}
+
+@media (min-width: 767px) {
+  .about__container p {
+    max-width: 1200rem;
+    text-align: left;
+  }
 }
 
 .about__image-placeholder {
@@ -792,6 +806,7 @@ body p {
   height: 302.5rem;
   margin-top: 20rem;
   border: 5rem double var(--light);
+  margin-bottom: 20rem;
 }
 
 @media (min-width: 767px) {
@@ -799,7 +814,6 @@ body p {
     padding: 0rem 0rem;
     height: 640rem;
     width: 605rem;
-    margin-bottom: 100rem;
   }
 }
 
@@ -833,6 +847,13 @@ body p {
 .about__links img {
   width: 60rem;
   height: 60rem;
+  -webkit-filter: invert(51%) sepia(62%) saturate(1184%) hue-rotate(78deg) brightness(123%) contrast(102%);
+          filter: invert(51%) sepia(62%) saturate(1184%) hue-rotate(78deg) brightness(123%) contrast(102%);
+}
+
+.about__links img:hover {
+  -webkit-filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(88deg) brightness(105%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(88deg) brightness(105%) contrast(102%);
 }
 
 .about #about-resume {
@@ -876,14 +897,14 @@ body p {
 
 .work h4 {
   text-align: center;
-  margin-bottom: 50rem;
+  margin-bottom: 100rem;
   color: var(--bright);
 }
 
 .work__projects {
   color: var(--bright);
-  margin-bottom: 250rem;
   max-width: 100%;
+  margin-bottom: 100rem;
 }
 
 @media (min-width: 767px) {
@@ -964,26 +985,6 @@ body p {
   margin-bottom: 40rem;
 }
 
-@media (min-width: 767px) {
-  .contact form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-}
-
 .contact h4 {
   text-align: center;
   text-shadow: 5rem 5rem var(--dark);
@@ -996,7 +997,8 @@ body p {
   margin-bottom: 10rem;
   background-color: var(--bright);
   color: var(--dark);
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   padding: 20rem;
   font-family: "GemunuLibre Medium";
   border: 5rem double var(--dark);
@@ -1004,7 +1006,8 @@ body p {
 
 @media (min-width: 767px) {
   .contact input {
-    width: 800rem;
+    min-width: 800rem;
+    max-width: 800rem;
   }
 }
 
@@ -1051,6 +1054,7 @@ body p {
   margin-bottom: 10rem;
   background-color: var(--bright);
   color: var(--dark);
+  min-width: 100%;
   max-width: 100%;
   padding: 20rem;
   min-height: 200rem;
@@ -1108,7 +1112,6 @@ body p {
   margin-top: 10rem;
   font-size: 25rem;
   letter-spacing: 5rem;
-  width: 160rem;
   height: 75rem;
   font-family: "GemunuLibre Medium";
   font-weight: bold;
@@ -1144,6 +1147,7 @@ body p {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-bottom: 20rem;
 }
 
 @media (min-width: 767px) {
@@ -1158,10 +1162,6 @@ body p {
   font-weight: bold;
   font-size: 35rem;
   color: var(--dark);
-}
-
-.contact__form-fields {
-  margin-bottom: 20rem;
 }
 
 .footer {
@@ -1206,6 +1206,11 @@ body p {
 
 .footer img {
   margin: 0rem 20rem 30rem 20rem;
+}
+
+.footer img:hover {
+  -webkit-filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(88deg) brightness(105%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(88deg) brightness(105%) contrast(102%);
 }
 
 .footer__enquire {
@@ -1305,6 +1310,26 @@ body p {
 
 .skills__items :hover {
   color: var(--bright);
+}
+
+.skills #jwt {
+  width: 150rem;
+}
+
+@media (min-width: 767px) {
+  .skills #jwt {
+    width: 300rem;
+  }
+}
+
+.skills #canva {
+  width: 75rem;
+}
+
+@media (min-width: 767px) {
+  .skills #canva {
+    width: 150rem;
+  }
 }
 
 .skills #django-img1 {

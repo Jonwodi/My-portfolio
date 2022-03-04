@@ -48,6 +48,22 @@
     }
   }
 
+  #jwt {
+    width: 150rem;
+
+    @include respond-to("small") {
+      width: 300rem;
+    }
+  }
+
+  #canva {
+    width: 75rem;
+
+    @include respond-to("small") {
+      width: 150rem;
+    }
+  }
+
   #django-img1 {
     width: 100rem;
 

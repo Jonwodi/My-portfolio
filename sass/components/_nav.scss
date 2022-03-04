@@ -25,6 +25,14 @@
 
   &__hamburger {
     margin-top: 50rem;
+
+    :hover {
+      // https://codepen.io/sosuke/pen/Pjoqqp
+      // changes color to green or #1dfb15
+      filter: invert(51%) sepia(62%) saturate(1184%) hue-rotate(78deg)
+        brightness(123%) contrast(102%);
+      cursor: pointer;
+    }
   }
 
   &__menu {

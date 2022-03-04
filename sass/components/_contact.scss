@@ -13,13 +13,6 @@
   form {
     max-width: 100%;
     margin-bottom: 40rem;
-    @include respond-to("small") {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: flex-end;
-      align-content: flex-end;
-      align-items: flex-end;
-    }
   }
 
   h4 {
@@ -34,13 +27,15 @@
     margin-bottom: 10rem;
     background-color: var(--bright);
     color: var(--dark);
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     padding: 20rem;
     font-family: "GemunuLibre Medium";
     border: 5rem double var(--dark);
 
     @include respond-to("small") {
-      width: 800rem;
+      min-width: 800rem;
+      max-width: 800rem;
     }
   }
 
@@ -61,6 +56,7 @@
     margin-bottom: 10rem;
     background-color: var(--bright);
     color: var(--dark);
+    min-width: 100%;
     max-width: 100%;
     padding: 20rem;
     min-height: 200rem;
@@ -90,7 +86,6 @@
     margin-top: 10rem;
     font-size: 25rem;
     letter-spacing: 5rem;
-    width: 160rem;
     height: 75rem;
     font-family: "GemunuLibre Medium";
     font-weight: bold;
@@ -116,6 +111,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-bottom: 20rem;
 
     @include respond-to("small") {
       align-items: flex-start;
@@ -125,11 +121,6 @@
   label p {
     font-weight: bold;
     font-size: 35rem;
-    // letter-spacing: 5rem;
     color: var(--dark);
-  }
-
-  &__form-fields {
-    margin-bottom: 20rem;
   }
 }
