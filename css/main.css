@@ -14,17 +14,17 @@
 
 @font-face {
   font-family: "GemunuLibre Medium";
-  src: url(/fonts/GemunuLibre-Medium.ttf);
+  src: url(https://jonwodi.github.io/My-portfolio/fonts/GemunuLibre-Medium.ttf);
 }
 
 @font-face {
   font-family: "GemunuLibre Bold";
-  src: url(/fonts/GemunuLibre-Bold.ttf);
+  src: url(https://jonwodi.github.io/My-portfolio/fonts/GemunuLibre-Bold.ttf);
 }
 
 @font-face {
   font-family: "GemunuLibre ExtraBold";
-  src: url(/fonts/GemunuLibre-ExtraBold.ttf);
+  src: url(https://jonwodi.github.io/My-portfolio/fonts/GemunuLibre-ExtraBold.ttf);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
