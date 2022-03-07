@@ -1,8 +1,7 @@
 .header {
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  background: url(https://jonwodi.github.io/My-portfolio//images/software.jpg)
-    no-repeat fixed;
+  background: url(../images/software.jpg) no-repeat fixed;
   background-size: 100% 100%;
   max-width: 100%;
   height: auto;
