@@ -953,6 +953,17 @@ body p {
   text-align: center;
 }
 
+.work p ~ p {
+  text-align: center;
+  margin-top: 20rem;
+}
+
+@media (min-width: 767px) {
+  .work p ~ p {
+    text-align: left;
+  }
+}
+
 .work span {
   color: var(--light);
 }

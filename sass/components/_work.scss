@@ -62,6 +62,14 @@
     text-align: center;
   }
 
+  p ~ p {
+    text-align: center;
+    margin-top: 20rem;
+    @include respond-to("small") {
+      text-align: left;
+    }
+  }
+
   span {
     color: var(--light);
   }
