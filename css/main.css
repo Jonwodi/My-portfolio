@@ -473,7 +473,7 @@ h1 {
 
 body h1 {
   font-family: "GemunuLibre ExtraBold";
-  font-size: 80rem;
+  font-size: 60rem;
   letter-spacing: 5rem;
 }
 
@@ -485,7 +485,7 @@ body h1 {
 
 body h3 {
   font-family: "GemunuLibre ExtraBold";
-  font-size: 50rem;
+  font-size: 35rem;
   letter-spacing: 5rem;
 }
 
@@ -1308,7 +1308,7 @@ body p {
           justify-content: space-evenly;
   -webkit-column-gap: 200rem;
           column-gap: 200rem;
-  row-gap: 100rem;
+  row-gap: 200rem;
   max-width: 100%;
 }
 

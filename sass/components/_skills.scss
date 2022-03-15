@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: space-evenly;
     column-gap: 200rem;
-    row-gap: 100rem;
+    row-gap: 200rem;
     max-width: 100%;
 
     @include respond-to("small") {
