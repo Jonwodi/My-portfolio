@@ -4,7 +4,7 @@
   background: url(../images/software.jpg) no-repeat fixed;
   background-size: 100% 100%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
 
   @include respond-to("small") {
     display: block;

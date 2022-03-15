@@ -24,18 +24,17 @@
 
   &__container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: space-evenly;
-    column-gap: 200rem;
-    row-gap: 200rem;
+    column-gap: 100rem;
+    row-gap: 100rem;
     max-width: 100%;
 
     @include respond-to("small") {
       max-width: 1200rem;
       margin: 0 auto;
-      column-gap: 100rem;
-      row-gap: 100rem;
+      flex-flow: row wrap;
     }
   }
 
@@ -44,7 +43,7 @@
     flex-flow: column wrap;
     align-items: stretch;
     text-align: center;
-    margin-top: 100rem;
+    margin-top: 50rem;
     :hover {
       color: var(--bright);
     }
