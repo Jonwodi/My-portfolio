@@ -1334,10 +1334,17 @@ body p {
       -ms-flex-align: stretch;
           align-items: stretch;
   text-align: center;
+  margin-top: 100rem;
 }
 
 .skills__items :hover {
   color: var(--bright);
+}
+
+@media (min-width: 767px) {
+  .skills__items {
+    margin-top: 0rem;
+  }
 }
 
 .skills #jwt {
