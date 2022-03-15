@@ -537,7 +537,7 @@ body p {
   -ms-grid-rows: (min-content)[2];
       grid-template-rows: repeat(2, -webkit-min-content);
       grid-template-rows: repeat(2, min-content);
-  background: url(../images/software.jpg) no-repeat fixed;
+  background: url(../images/software.jpg) no-repeat scroll;
   background-size: cover;
   max-width: 100%;
   height: auto;
@@ -545,6 +545,7 @@ body p {
 
 @media (min-width: 767px) {
   .header {
+    background: url(../images/software.jpg) no-repeat fixed;
     background-size: 100% 100%;
     display: block;
     height: 1036rem;

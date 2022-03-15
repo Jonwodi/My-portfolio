@@ -1,12 +1,13 @@
 .header {
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  background: url(../images/software.jpg) no-repeat fixed;
+  background: url(../images/software.jpg) no-repeat scroll;
   background-size: cover;
   max-width: 100%;
   height: auto;
 
   @include respond-to("small") {
+    background: url(../images/software.jpg) no-repeat fixed;
     background-size: 100% 100%;
     display: block;
     height: 1036rem;
