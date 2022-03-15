@@ -471,10 +471,6 @@ h1 {
   color: var(--elements);
 }
 
-body {
-  max-width: 100%;
-}
-
 body h1 {
   font-family: "GemunuLibre ExtraBold";
   font-size: 80rem;
@@ -913,7 +909,7 @@ body p {
 
 @media (min-width: 767px) {
   .work__projects {
-    max-width: 900rem;
+    max-width: 767rem;
   }
 }
 
@@ -929,7 +925,7 @@ body p {
 
 .work__gitlinks :hover {
   background-color: var(--bright);
-  max-width: 900rem;
+  max-width: 767rem;
 }
 
 .work img {
@@ -939,7 +935,7 @@ body p {
 
 @media (min-width: 767px) {
   .work img {
-    max-width: 900rem;
+    max-width: 767rem;
     height: 600rem;
   }
 }
@@ -1197,22 +1193,36 @@ body p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30rem;
   margin-top: 30rem;
 }
 
+@media (min-width: 767px) {
+  .footer__top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer__top p {
   font-family: "GemunuLibre Medium";
   font-weight: bold;
-  margin-left: 20rem;
-  margin-right: 20rem;
   letter-spacing: 5rem;
+}
+
+@media (min-width: 767px) {
+  .footer__top p {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
 }
 
 .footer__top p:hover {

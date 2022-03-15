@@ -22,7 +22,7 @@
     margin-bottom: 100rem;
 
     @include respond-to("small") {
-      max-width: 900rem;
+      max-width: 767rem;
     }
   }
 
@@ -36,7 +36,7 @@
     max-width: 100%;
     :hover {
       background-color: var(--bright);
-      max-width: 900rem;
+      max-width: 767rem;
     }
   }
 
@@ -44,7 +44,7 @@
     border: 3rem solid var(--light);
     max-width: 100%;
     @include respond-to("small") {
-      max-width: 900rem;
+      max-width: 767rem;
       height: 600rem;
     }
   }
