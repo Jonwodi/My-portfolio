@@ -27,13 +27,15 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    column-gap: 100rem;
+    column-gap: 200rem;
     row-gap: 100rem;
     max-width: 100%;
 
     @include respond-to("small") {
       max-width: 1200rem;
       margin: 0 auto;
+      column-gap: 100rem;
+      row-gap: 100rem;
     }
   }
 

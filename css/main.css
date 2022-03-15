@@ -1306,8 +1306,8 @@ body p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-column-gap: 100rem;
-          column-gap: 100rem;
+  -webkit-column-gap: 200rem;
+          column-gap: 200rem;
   row-gap: 100rem;
   max-width: 100%;
 }
@@ -1316,6 +1316,9 @@ body p {
   .skills__container {
     max-width: 1200rem;
     margin: 0 auto;
+    -webkit-column-gap: 100rem;
+            column-gap: 100rem;
+    row-gap: 100rem;
   }
 }
 
