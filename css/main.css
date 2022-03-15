@@ -471,6 +471,10 @@ h1 {
   color: var(--elements);
 }
 
+body {
+  max-width: 100%;
+}
+
 body h1 {
   font-family: "GemunuLibre ExtraBold";
   font-size: 80rem;
