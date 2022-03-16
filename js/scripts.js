@@ -1,6 +1,5 @@
 let images  = {
   "codehance": ['images/codehance1.png', 'images/codehance2.png', 'images/codehance3.png', 'images/codehance4.png'],
-  "filmReader": ['images/csv-film-reader1.png', 'images/csv-film-reader2.png'],
   "londonFitness": ['images/ldn-fitness1.png', 'images/ldn-fitness2.png', 'images/ldn-fitness3.png', 'images/ldn-fitness4.png', 'images/ldn-fitness5.png', 'images/ldn-fitness6.png'],
   "jobPlusVol1": ['images/jobplus-v1-1.png', 'images/jobplus-v1-2.png', 'images/jobplus-v1-3.png', 'images/jobplus-v1-4.png'],
   "jobPlusVol2": ['images/jobplus-v2-1.png', 'images/jobplus-v2-2.png', 'images/jobplus-v2-3.png', 'images/jobplus-v2-4.png'],
@@ -25,7 +24,6 @@ let slider = (project) => {
   
 
 slider("codehance");
-slider("filmReader");
 slider("londonFitness");
 slider("jobPlusVol1");
 slider("jobPlusVol2");

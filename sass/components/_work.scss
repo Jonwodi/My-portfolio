@@ -28,12 +28,15 @@
 
   &__gitlinks {
     background-color: var(--light);
-    max-width: 100%;
     text-align: center;
     padding: 3rem;
     color: var(--dark);
     letter-spacing: 5rem;
     max-width: 100%;
+    :first-child {
+      text-align: center;
+    }
+
     :hover {
       background-color: var(--bright);
       max-width: 767rem;
@@ -43,6 +46,7 @@
   img {
     border: 3rem solid var(--light);
     max-width: 100%;
+    height: auto;
     @include respond-to("small") {
       max-width: 767rem;
       height: 600rem;
@@ -56,15 +60,26 @@
   h6 {
     text-align: center;
     text-decoration: underline;
+    padding: 0rem 20rem;
+    @include respond-to("small") {
+      text-align: left;
+      padding: 0rem;
+    }
   }
 
   p {
     text-align: center;
+    padding: 0rem 20rem 0rem 20rem;
+    @include respond-to("small") {
+      padding: 0rem;
+      text-align: left;
+    }
   }
 
   p ~ p {
     text-align: center;
-    margin-top: 20rem;
+    margin: 20rem 0rem 10rem 0rem;
+    // margin-top: 20rem;
     @include respond-to("small") {
       text-align: left;
     }

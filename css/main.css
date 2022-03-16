@@ -540,7 +540,7 @@ body p {
   background: url(../images/software.jpg) no-repeat scroll;
   background-size: cover;
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 @media (min-width: 767px) {
@@ -792,20 +792,22 @@ body p {
   text-align: center;
   margin-bottom: 50rem;
   max-width: 100%;
+  padding: 0rem 20rem 0 20rem;
 }
 
 @media (min-width: 767px) {
   .about__container p {
     max-width: 1200rem;
     text-align: left;
+    padding: 0;
   }
 }
 
 .about__image-placeholder {
   background: url(../images/face.jpeg) no-repeat scroll;
-  width: 75%;
+  width: 302.5rem;
   background-size: 100% 100%;
-  height: 302.5rem;
+  height: 320rem;
   margin-top: 20rem;
   border: 5rem double var(--light);
   margin-bottom: 20rem;
@@ -917,12 +919,15 @@ body p {
 
 .work__gitlinks {
   background-color: var(--light);
-  max-width: 100%;
   text-align: center;
   padding: 3rem;
   color: var(--dark);
   letter-spacing: 5rem;
   max-width: 100%;
+}
+
+.work__gitlinks :first-child {
+  text-align: center;
 }
 
 .work__gitlinks :hover {
@@ -933,6 +938,7 @@ body p {
 .work img {
   border: 3rem solid var(--light);
   max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 767px) {
@@ -949,15 +955,31 @@ body p {
 .work h6 {
   text-align: center;
   text-decoration: underline;
+  padding: 0rem 20rem;
+}
+
+@media (min-width: 767px) {
+  .work h6 {
+    text-align: left;
+    padding: 0rem;
+  }
 }
 
 .work p {
   text-align: center;
+  padding: 0rem 20rem 0rem 20rem;
+}
+
+@media (min-width: 767px) {
+  .work p {
+    padding: 0rem;
+    text-align: left;
+  }
 }
 
 .work p ~ p {
   text-align: center;
-  margin-top: 20rem;
+  margin: 20rem 0rem 10rem 0rem;
 }
 
 @media (min-width: 767px) {
@@ -1192,13 +1214,13 @@ body p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30rem;
@@ -1209,8 +1231,11 @@ body p {
   .footer__top {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
