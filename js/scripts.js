@@ -3,7 +3,8 @@ let images  = {
   "londonFitness": ['images/ldn-fitness1.png', 'images/ldn-fitness2.png', 'images/ldn-fitness3.png', 'images/ldn-fitness4.png', 'images/ldn-fitness5.png', 'images/ldn-fitness6.png'],
   "jobPlusVol1": ['images/jobplus-v1-1.png', 'images/jobplus-v1-2.png', 'images/jobplus-v1-3.png', 'images/jobplus-v1-4.png'],
   "jobPlusVol2": ['images/jobplus-v2-1.png', 'images/jobplus-v2-2.png', 'images/jobplus-v2-3.png', 'images/jobplus-v2-4.png'],
-  "restaurant": ['images/restuarant-booking1.png', 'images/restuarant-booking2.png', 'images/restuarant-booking3.png', 'images/restuarant-booking4.png', 'images/restuarant-booking5.png'],
+  "restaurant": ['images/restuarant-booking1.png', 'images/restuarant-booking2.png', 'images/restuarant-booking3.png', 'images/restuarant-booking4.png', 'images/restuarant-booking5.png', 'images/restuarant-booking6.png', 'images/restuarant-booking7.png'],
+  "bankAnalytics": ['images/bank-data-analytics1.png', 'images/bank-data-analytics2.png', 'images/bank-data-analytics3.png', 'images/bank-data-analytics4.png'],
 }
 
 
@@ -28,3 +29,4 @@ slider("londonFitness");
 slider("jobPlusVol1");
 slider("jobPlusVol2");
 slider("restaurant");
+slider("bankAnalytics")
