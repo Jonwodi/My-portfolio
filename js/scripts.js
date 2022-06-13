@@ -41,6 +41,11 @@ let images = {
     "images/bank-data-analytics3.png",
     "images/bank-data-analytics4.png",
   ],
+  spacestagram: [
+    "images/spacestagram1.png",
+    "images/spacestagram2.png",
+    "images/spacestagram3.png",
+  ],
 };
 
 let slider = (project) => {
@@ -63,3 +68,4 @@ slider("jobPlusVol1");
 slider("jobPlusVol2");
 slider("restaurant");
 slider("bankAnalytics");
+slider("spacestagram");
