@@ -46,6 +46,7 @@ let images = {
     "images/spacestagram2.png",
     "images/spacestagram3.png",
   ],
+  mmaWebApp: ["images/mma-web-app1.png", "images/mma-web-app2.png"],
 };
 
 let slider = (project) => {
@@ -69,3 +70,4 @@ slider("jobPlusVol2");
 slider("restaurant");
 slider("bankAnalytics");
 slider("spacestagram");
+slider("mmaWebApp");
